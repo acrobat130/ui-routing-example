@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="uiRoutingExample">
+	<head lang="en">
+		<meta charset="UTF-8">
+    <style>
+    	div {
+    		border-style: solid;
+    		border-width: 1px;
+    		padding: 10px;
+    	}
+    </style>
+    </head>
+    <body>
+    	<div>
+			<h3>index </h3>
+    		<a ui-sref="view1">click here to see view1</a>
+    	</div>
+		<div ui-view></div>
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+		<script src="app.js"></script>
+		<script src="view1.js"></script>
+		<script src="nestedView1.js"></script>
+		<script src="nestedView2.js"></script>
+	</body>
+</html>
